@@ -9,7 +9,7 @@ public class Shop {
 
     public void add(Car car) throws OutOfFreePlaceException, TooBigCarException {
         double volume = car.getHeight() * car.getLength() * car.getWidth();
-        if (volume < 3)
+        if (listForCars.size()>5)
             throw new OutOfFreePlaceException();
 
         if (volume > 60)

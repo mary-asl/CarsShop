@@ -26,7 +26,7 @@ public class Main {
             cars.add(car7);
             System.out.println("+ car7");
         } catch (OutOfFreePlaceException e) {
-            System.out.println("Too small car!");
+            System.out.println("There is no place");
         } catch (TooBigCarException e) {
             System.out.println("Too big car!");
         }
